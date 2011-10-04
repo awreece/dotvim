@@ -37,15 +37,15 @@ set linebreak         " Display long lines as wrapped at word boundries.
 set showmatch         " Show matching brackets.
 set matchtime=4       " Time to flash the brack with showmatch.
 
-set softtabstop=4     " Smaller tabs.
-set tabstop=4		  " Smaller tabs.
-set shiftwidth=4      " Use 4 space indentation for each step of auto indent.
+set softtabstop=8     " Smaller tabs.
+set tabstop=8		  " Smaller tabs.
+set shiftwidth=8      " Use 4 space indentation for each step of auto indent.
 
-set showmode 	   	  " Show if in Insert, Visual, Replace etc.
-set showcmd           " Show (partial) command in status line.
-set ruler             " Use a ruler on the bottom.
-set wildmenu		 " Enable wildcard menu at bottom of vim.
-set wildmode=longest,list " Complete to wild on tab, show list on second tab.
+set showmode				" Show if in Insert, Visual, Replace etc.
+set showcmd					" Show (partial) command in status line.
+set ruler					" Use a ruler on the bottom.
+set wildmenu				" Enable wildcard menu at bottom of vim.
+set wildmode=list,longest	" Show list on tab, complete to wild on second tab.
 
 set nobackup          " Don't keep a backup file.
 
