@@ -40,11 +40,12 @@ set softtabstop=8     " Smaller tabs.
 set tabstop=8		  " Smaller tabs.
 set shiftwidth=8      " Use 4 space indentation for each step of auto indent.
 
-set showmode				" Show if in Insert, Visual, Replace etc.
-set showcmd					" Show (partial) command in status line.
-set ruler					" Use a ruler on the bottom.
-set wildmenu				" Enable wildcard menu at bottom of vim.
-set wildmode=list,longest	" Show list on tab, complete to wild on second tab.
+set showmode			" Show if in Insert, Visual, Replace etc.
+set showcmd			" Show (partial) command in status line.
+set ruler			" Use a ruler on the bottom.
+set wildmenu			" Enable wildcard menu at bottom of vim.
+set wildmode=longest,list:full	" Complete to longest on first tab, list 
+				" and complete on second.
 
 set nobackup          " Don't keep a backup file.
 
