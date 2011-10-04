@@ -25,7 +25,6 @@ set backspace=2       " Allow backspacing over everything in insert mode.
 set number			  " By default number all lines.
 set numberwidth=3     " Use 3 spaces for line numbers.
 
-set foldcolumn=2      " Set a column for folds.
 set foldlevel=0       " Show contents of all folds.
 set foldmethod=syntax " Use syntax for folding.
 
