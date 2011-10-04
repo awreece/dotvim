@@ -53,24 +53,15 @@ set nobackup          " Don't keep a backup file.
 " filenames. These are files I am not likely to want to edit or read.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,.class
 
-set statusline=%F%m%r%h%w[%L][%{&ff}]%y[%p%%][%04l,%04v]
-"              | | | | |  |   |      |  |     |    |
-"              | | | | |  |   |      |  |     |    + current
-"              | | | | |  |   |      |  |     |       column
-"              | | | | |  |   |      |  |     +-- current line
-"              | | | | |  |   |      |  +-- current % into file
-"              | | | | |  |   |      +-- current syntax in
-"              | | | | |  |   |          square brackets
-"              | | | | |  |   +-- current fileformat
-"              | | | | |  +-- number of lines
-"              | | | | +-- preview flag in square brackets
-"              | | | +-- help flag in square brackets
-"              | | +-- readonly flag in square brackets
-"              | +-- rodified flag in square brackets
-"              +-- full path to file in the buffer
+set laststatus=2	  " Always show status.
 
+set statusline=%<\ %F%m	  					" Filename and modified bit.
+set statusline+=\ %{fugitive#statusline()}	" Oooh, git status line.
+set statusline+=%= 							" Start of right aligned.
+set statusline+=[%c%V,%l]					" Column number and line number.
+set statusline+=\ %P  						" Current line/total lines and
+											" percentage.
 
-"Keyboard Mappings
 "noremap <C-P> :set invpaste paste?<CR>
 
 set pastetoggle=<C-P>
