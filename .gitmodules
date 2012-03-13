@@ -21,3 +21,7 @@
 [submodule "bundle/Rainbow-Parenthesis"]
 	path = bundle/Rainbow-Parenthesis
 	url = https://github.com/vim-scripts/Rainbow-Parenthesis.git
+	ignore = dirty
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/msanders/snipmate.vim.git
