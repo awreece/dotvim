@@ -17,3 +17,7 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+	ignore = dirty
+[submodule "bundle/Rainbow-Parenthesis"]
+	path = bundle/Rainbow-Parenthesis
+	url = https://github.com/vim-scripts/Rainbow-Parenthesis.git
