@@ -14,5 +14,5 @@ Installation instructions:
 Installing a plugin:
 
 	git submodule add http://github.com/tpope/vim-fugitive.git bundle/fugitive
-	git commit -m "Installed fugitive bundle as a submodule"
 	<add "ignore = dirty" to the .gitmodules file>
+	git commit -m "Installed fugitive bundle as a submodule"
