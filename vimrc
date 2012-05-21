@@ -42,6 +42,7 @@ set scrolloff=1		" Dont let the curser get too close to the edge.
 
 set textwidth=79	" Wraps a line with a break after 79 chars.
 set linebreak		" Display long lines as wrapped at word boundries.
+set colorcolumn=80      " Display a colored column at column 80
 
 set softtabstop=8	" Smaller tabs.
 set tabstop=8		" Smaller tabs.
