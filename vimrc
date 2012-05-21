@@ -1,3 +1,6 @@
+let g:pathogen_disabled = []
+call add(g:pathogen_disabled, 'syntastic')
+
 call pathogen#infect()
 
 filetype indent on
