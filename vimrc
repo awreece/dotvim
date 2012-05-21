@@ -1,3 +1,5 @@
+set nocompatible      " Use Vim defaults.
+
 let g:pathogen_disabled = []
 call add(g:pathogen_disabled, 'syntastic')
 
@@ -9,8 +11,6 @@ syntax on
 
 colorscheme evening 
 set background=dark
-
-set nocompatible      " Use Vim defaults.
 
 " set expandtab         " Replace all tabs with with spaces.
 
