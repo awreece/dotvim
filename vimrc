@@ -57,10 +57,18 @@ set laststatus=2	" Always show status.
 
 set statusline=%<\ %F%m				" Filename and modified bit.
 set statusline+=\ %{fugitive#statusline()}	" Oooh, git status line.
+set statusline+=\ %#warningmsg#			" Start warnin colors	
+set statusline+=%{SyntasticStatuslineFlag()}	" Syntastic error message
+set statusline+=%*				" End warning colors
 set statusline+=%= 				" Start of right aligned.
 set statusline+=[%c%V,%l]			" Column number and line number.
 set statusline+=\ %P  				" Current line/total lines and
 						" percentage.
+
+" Configure the syntastic plugin.
+let g:syntastic_auto_loc_list=1		" Auto open error list when errors detected.
+let g:syntastic_loc_list_height=3	" Error list is only 5 lines long.
+let g:syntastic_quiet_warnings=1	" Don't bother me unles there are warnings.
 
 "noremap <C-P> :set invpaste paste?<CR>
 
