@@ -14,10 +14,17 @@ set background=dark
 
 " set expandtab         " Replace all tabs with with spaces.
 
+" Use sane regex matching. Thanks Steve Losh!
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+nnoremap / /\v
+vnoremap / /\v
+
 set incsearch		" Incremental search.
 set hlsearch		" Highlight matching search terms.
 set noignorecase	" Don't ignore case for searching.
 set magic		" Slightly better regex.
+set showmatch		" Show matching brackets.
+set matchtime=4		" Time to flash the brack with showmatch.
 
 set autoindent		" always set autoindenting on
 
@@ -35,9 +42,6 @@ set scrolloff=1		" Dont let the curser get too close to the edge.
 
 set textwidth=79	" Wraps a line with a break after 79 chars.
 set linebreak		" Display long lines as wrapped at word boundries.
-
-set showmatch		" Show matching brackets.
-set matchtime=4		" Time to flash the brack with showmatch.
 
 set softtabstop=8	" Smaller tabs.
 set tabstop=8		" Smaller tabs.
